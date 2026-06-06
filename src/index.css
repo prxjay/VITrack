@@ -14,10 +14,10 @@
     --text-secondary: #CBD5E1;
     --text-muted: #94A3B8;
 
-    --glass-bg: rgba(9, 13, 16, 0.28);
-    --glass-bg-scrolled: rgba(9, 13, 16, 0.72);
-    --glass-border: rgba(255, 255, 255, 0.12);
-    --glass-border-scrolled: rgba(255, 255, 255, 0.18);
+    --glass-bg: rgba(15, 23, 42, 0.55);
+    --glass-bg-scrolled: rgba(15, 23, 42, 0.85);
+    --glass-border: rgba(255, 255, 255, 0.15);
+    --glass-border-scrolled: rgba(255, 255, 255, 0.22);
     
     --shadow-glow: 0 0 40px rgba(99, 102, 241, 0.25);
     --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.55);
