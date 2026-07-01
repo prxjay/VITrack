@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://vi-track-kappa.vercel.app/sitemap.xml
+Sitemap: https://vitrack-tool.vercel.app/sitemap.xml
