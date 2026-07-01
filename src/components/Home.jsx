@@ -124,54 +124,64 @@ export default function Home({ setPage }) {
 
   const testimonials = [
     {
-      name: 'Abineshkumar',
-      role: 'Final Year CSE undergraduate',
-      text: 'The Target CGPA Planner is solid. I was stressing about placement cutoffs, but mapping out exactly what GPA I need in my final sems made it so simple. The UI is clean too.'
+      name: "Abineshkumar",
+      role: "Final Year CSE Undergraduate",
+      text: "The target CGPA planner is very useful. I could easily see what GPA I need in my remaining semesters."
     },
     {
-      name: 'Sudharshan Venkatraman',
-      role: 'Final Year CSE undergraduate',
-      text: 'Usually these GPA calculators have weird credit bugs, but this one works perfectly for our credit weightage. The FAT calculator helps me figure out minimum requirements in seconds.'
+      name: "Sudharshan Venkatraman",
+      role: "Final Year CSE Undergraduate",
+      text: "CGPA calculations are accurate and easy to understand. Much better than calculating everything manually."
     },
     {
-      name: 'Kritika Bansal',
-      role: 'Final Year CSE undergraduate',
-      text: 'Really clean dark mode. I mostly use the target planner before course registration to decide which courses are high-priority to maintain my CGPA.'
+      name: "Kritika Bansal",
+      role: "Final Year CSE Undergraduate",
+      text: "I use the planner regularly before semester registration. It helps me set realistic academic goals."
     },
     {
-      name: 'Manas Pant',
-      role: 'Final Year CSE undergraduate',
-      text: 'Love the new theme. The site is fast, responsive, and doesn\'t spam ads like other planners. Pushing for that 9+ pointer goal feels way more structured now.'
+      name: "Manas Pant",
+      role: "Final Year CSE Undergraduate",
+      text: "The website is simple, fast and easy to use. Everything works smoothly on both mobile and laptop."
     },
     {
-      name: 'Dhruv Maheswari',
-      role: 'Final Year ECE undergraduate',
-      text: 'The FAT marks calculator is super helpful. It gives a clear picture of how much sessional stress I need to deal with before final exams.'
+      name: "Dhruv Maheswari",
+      role: "Final Year ECE Undergraduate",
+      text: "The FAT marks calculator saved a lot of time. I could quickly check the marks required for my target grade."
     },
     {
-      name: 'Jigyasu Shekar',
-      role: 'Final Year ECE undergraduate',
-      text: 'Amazing work on the UI. The planners are straightforward to use and the math is always spot on. Highly recommend for semester planning.'
+      name: "Jigyasu Shekar",
+      role: "Final Year ECE Undergraduate",
+      text: "Clean design and straightforward features. The calculators are accurate and very helpful during exam time."
     },
     {
-      name: 'Dilip',
-      role: 'Third Year CSE undergraduate',
-      text: 'The Target CGPA Planner is a unique feature. It helped me realize that a 9 pointer is still within reach if I focus on my upcoming lab-heavy semesters.'
+      name: "Pavan",
+      role: "Third Year CSE Undergraduate",
+      text: "I have tried other CGPA calculators, but this one is much easier to use and gives results instantly."
     },
     {
-      name: 'Uzma',
-      role: 'Third Year CSE undergraduate',
-      text: 'Super smooth transitions. Calculating cumulative CGPA with credit histories is usually a chore on excel sheets, but doing it here takes like 10 seconds.'
+      name: "Prabitha Miracline",
+      role: "Fourth Year Undergraduate",
+      text: "Very helpful before FAT exams. The marks calculator helped me understand where I stand in each subject."
     },
     {
-      name: 'Balaji',
-      role: 'Second Year Mtech Software',
-      text: 'Great tool for keeping track of academic goals. The interface is premium and responsive on mobile, which is great for quick updates during classes.'
+      name: "Manasvi R",
+      role: "Fourth Year CSE Undergraduate",
+      text: "The dark mode looks great and the website feels very smooth. One of the best academic tools for VIT students."
     },
     {
-      name: 'Atharv',
-      role: 'Second Year Chemical Engineering',
-      text: 'Simple, functional, and very well designed. The target CGPA planner gives me a realistic roadmap instead of just guessing numbers.'
+      name: "Sachin Sundar",
+      role: "Fourth Year Undergraduate",
+      text: "The target CGPA planner helped me check whether I could meet placement eligibility requirements."
+    },
+    {
+      name: "Uzma",
+      role: "Third Year CSE Undergraduate",
+      text: "Calculating CGPA with multiple semesters is really easy here. The process takes only a few seconds."
+    },
+    {
+      name: "Atharv",
+      role: "Second Year Chemical Engineering",
+      text: "Simple and practical tool. The planner gives a clear idea of what grades I should aim for."
     }
   ];
 
@@ -213,8 +223,8 @@ export default function Home({ setPage }) {
         </p>
 
         <div className="features-grid">
-          <div 
-            className="feature-card" 
+          <div
+            className="feature-card"
             style={{ '--card-color': '#f97316', '--card-rgb': '249, 115, 22' }}
             onClick={() => handleFeatureClick('gpa')}
           >
@@ -225,8 +235,8 @@ export default function Home({ setPage }) {
             <p>Compute your semester GPA by entering course grades and credits. Support for up to 20 courses simultaneously.</p>
           </div>
 
-          <div 
-            className="feature-card" 
+          <div
+            className="feature-card"
             style={{ '--card-color': '#06b6d4', '--card-rgb': '6, 182, 212' }}
             onClick={() => handleFeatureClick('cgpa')}
           >
@@ -237,8 +247,8 @@ export default function Home({ setPage }) {
             <p>Calculate your updated cumulative GPA by combining previous credits and CGPA with current semester results.</p>
           </div>
 
-          <div 
-            className="feature-card" 
+          <div
+            className="feature-card"
             style={{ '--card-color': '#a855f7', '--card-rgb': '168, 85, 247' }}
             onClick={() => handleFeatureClick('planner')}
           >
@@ -249,8 +259,8 @@ export default function Home({ setPage }) {
             <p>Input your desired target CGPA to map out the average GPA required in future credits/semesters to achieve it.</p>
           </div>
 
-          <div 
-            className="feature-card" 
+          <div
+            className="feature-card"
             style={{ '--card-color': '#EC4899', '--card-rgb': '236, 72, 153' }}
             onClick={() => handleFeatureClick('fat')}
           >
@@ -280,26 +290,26 @@ export default function Home({ setPage }) {
             <div className="sim-title">Target CGPA Planner (Placement Goal Scenario)</div>
             <div style={{ width: '52px' }}></div>
           </div>
-          
+
           <div className="simulation-body">
             <div className="sim-form-row">
               <div className="sim-form-group">
                 <label>Current CGPA</label>
-                <input 
-                  type="text" 
+                <input
+                  type="text"
                   className={`sim-input ${simActiveField === 'currentCgpa' ? 'active' : ''}`}
                   value={simCurrentCgpa}
-                  readOnly 
+                  readOnly
                   placeholder="e.g. 8.24"
                 />
               </div>
               <div className="sim-form-group">
                 <label>Target CGPA</label>
-                <input 
-                  type="text" 
+                <input
+                  type="text"
                   className={`sim-input ${simActiveField === 'targetCgpa' ? 'active' : ''}`}
                   value={simTargetCgpa}
-                  readOnly 
+                  readOnly
                   placeholder="e.g. 8.50"
                 />
               </div>
@@ -308,21 +318,21 @@ export default function Home({ setPage }) {
             <div className="sim-form-row">
               <div className="sim-form-group">
                 <label>Credits Completed</label>
-                <input 
-                  type="text" 
+                <input
+                  type="text"
                   className={`sim-input ${simActiveField === 'currentCredits' ? 'active' : ''}`}
                   value={simCurrentCredits}
-                  readOnly 
+                  readOnly
                   placeholder="e.g. 78.5"
                 />
               </div>
               <div className="sim-form-group">
                 <label>Overall Credits Left</label>
-                <input 
-                  type="text" 
+                <input
+                  type="text"
                   className={`sim-input ${simActiveField === 'creditsLeft' ? 'active' : ''}`}
                   value={simCreditsLeft}
-                  readOnly 
+                  readOnly
                   placeholder="e.g. 21.5"
                 />
               </div>
@@ -331,11 +341,11 @@ export default function Home({ setPage }) {
             <div className="sim-form-row">
               <div className="sim-form-group">
                 <label>Semesters Remaining</label>
-                <input 
-                  type="text" 
+                <input
+                  type="text"
                   className={`sim-input ${simActiveField === 'semsRemaining' ? 'active' : ''}`}
                   value={simSemsRemaining}
-                  readOnly 
+                  readOnly
                   placeholder="e.g. 1"
                 />
               </div>
@@ -407,7 +417,7 @@ export default function Home({ setPage }) {
       </section>
 
       {/* Suggestion & Feedback Section */}
-      <section className="future-plans">
+      <section id="feedback" className="future-plans">
         <div className="future-plans-content">
           <div className="future-icon" style={{ animation: 'none' }}>
             <i className="fa-solid fa-circle-question"></i>
@@ -419,30 +429,30 @@ export default function Home({ setPage }) {
 
           <form action="https://api.web3forms.com/submit" method="POST" className="feedback-form">
             <input type="hidden" name="access_key" value="e0630778-a382-4f61-93cd-649c0c7d1ae7" />
-            
+
             <div className="feedback-input-row">
-              <input 
-                type="text" 
-                name="name" 
-                className="input-custom" 
-                placeholder="Full name" 
-                required 
+              <input
+                type="text"
+                name="name"
+                className="input-custom"
+                placeholder="Full name"
+                required
               />
-              <input 
-                type="email" 
-                name="email" 
-                className="input-custom" 
-                placeholder="Email address" 
-                required 
+              <input
+                type="email"
+                name="email"
+                className="input-custom"
+                placeholder="Email address"
+                required
               />
             </div>
 
-            <textarea 
-              name="message" 
-              className="input-custom feedback-textarea" 
-              placeholder="Your Message" 
+            <textarea
+              name="message"
+              className="input-custom feedback-textarea"
+              placeholder="Your Message"
               rows="4"
-              required 
+              required
             ></textarea>
 
             <button type="submit" className="btn-calc feedback-submit-btn">

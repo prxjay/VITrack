@@ -6,6 +6,8 @@ import CGPACalculator from './components/CGPACalculator';
 import TargetCGPAPlanner from './components/TargetCGPAPlanner';
 import FATCalculator from './components/FATCalculator';
 import HowToUse from './components/HowToUse';
+import PrivacyPolicy from './components/PrivacyPolicy';
+import TermsAndConditions from './components/TermsAndConditions';
 import Footer from './components/Footer';
 
 function App() {
@@ -44,6 +46,10 @@ function App() {
         return <FATCalculator />;
       case 'howtouse':
         return <HowToUse />;
+      case 'privacy':
+        return <PrivacyPolicy />;
+      case 'terms':
+        return <TermsAndConditions />;
       case 'home':
       default:
         return <Home setPage={setPage} />;
