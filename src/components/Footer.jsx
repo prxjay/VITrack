@@ -1,28 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 
 export default function Footer({ setPage }) {
-  const [overallVisits, setOverallVisits] = useState(1);
-  const hasCounted = useRef(false);
-
-  useEffect(() => {
-    if (hasCounted.current) return;
-    hasCounted.current = true;
-
-    // Unique project namespace for tracking live production counters
-    const namespace = 'vitrack_v3_live_prod';
-    
-    // Increment overall visits on load
-    fetch(`https://api.counterapi.dev/v1/${namespace}/visits/up`)
-      .then(res => res.json())
-      .then(data => {
-        if (data && typeof data.count === 'number') {
-          setOverallVisits(data.count);
-        }
-      })
-      .catch(err => console.error('Error incrementing visits:', err));
-
-  }, []);
-
   const handleNavClick = (targetPage) => {
     setPage(targetPage);
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -44,9 +22,6 @@ export default function Footer({ setPage }) {
               <a href="https://prxjay.github.io/Portfolio/" target="_blank" rel="noopener noreferrer"><i className="fas fa-globe"></i></a>
               <a href="https://github.com/prxjay" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a>
               <a href="https://www.linkedin.com/in/prawin-jayakhar-b16185250/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin-in"></i></a>
-            </div>
-            <div className="footer-visits-counter">
-              <span>Overall Visits: <strong>{overallVisits.toLocaleString()}+</strong></span>
             </div>
           </div>
 
