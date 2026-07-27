@@ -19,9 +19,9 @@ export default function Footer({ setPage }) {
               Hey folks! I'm Prawin, the creator behind VITrack. As an undergraduate at VIT, I've been through the mess of manually calculating GPAs and stressing over maintaining my CGPA. I built this tool to make that process easier for all of us. Hope you find it useful. Good luck!
             </p>
             <div className="footer-socials">
-              <a href="https://www.linkedin.com/in/prawin-jayakhar-b16185250/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin-in"></i></a>
+              <a href="https://www.linkedin.com/in/prawin-jayakhar/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin-in"></i></a>
               <a href="https://github.com/prxjay" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a>
-              <a href="https://prxjay.github.io/Portfolio/" target="_blank" rel="noopener noreferrer"><i className="fas fa-globe"></i></a>
+              <a href="https://prawinjayakhar.vercel.app/" target="_blank" rel="noopener noreferrer"><i className="fas fa-globe"></i></a>
             </div>
           </div>
 
